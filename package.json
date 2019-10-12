@@ -1,0 +1,33 @@
+{
+  "name": "the-bank-for-america",
+  "version": "1.0.0",
+  "description": "This is the Phase 2 Project that focuses on the backend. For this project it will be a replica of a bank that focuses on the backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosaic43/The-Bank-For-America.git"
+  },
+  "keywords": [
+    "Phase",
+    "2",
+    "Project",
+    "Backend"
+  ],
+  "author": "Chantee Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mosaic43/The-Bank-For-America/issues"
+  },
+  "homepage": "https://github.com/mosaic43/The-Bank-For-America#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "knex": "^0.19.5",
+    "mustache": "^3.1.0",
+    "pg": "^7.12.1",
+    "sqlite3": "^4.1.0"
+  }
+}
