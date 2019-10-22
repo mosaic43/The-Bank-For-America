@@ -1,0 +1,62 @@
+body {
+    background-color: white;
+    margin: 0% !important;
+    padding: 0%;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    margin: 0% !important;
+    padding: 0%;
+}
+.navHome {
+    margin: 0% !important;
+    padding-top: 6% !important;
+    align-content: flex-end;
+    height: 4vw;
+    width: 100vw;
+    color: white;
+    font-size: 20px;
+    background-color:rgb(220, 20, 49);
+}
+.subNavHome {
+    margin: 0%;
+    padding: 0%;
+    height: 3vw;
+    width: 100vw;
+    align-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 222, 208);
+    font-size: 16px;
+    padding-left: 3.5%;
+}
+
+input[type=submit]{
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    align-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 222, 208);
+    font-size: 16px;
+    padding-left: 3.5%;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgb(114, 110, 103);
+    height: 3vw;
+    line-height: 3vw;
+    vertical-align: middle;
+    cursor: pointer;
+    
+} 
+input[type=submit]:hover {
+background-color: rgb(161, 156, 146);
+}
+
+/* <div class="row">
+<div class="col col-md-2 subNavButton">Accounts</div>
+<div class="col col-md-2 subNavButton">Bill Pay</div>
+<div class="col col-md-2 subNavButton">Transfer Funds</div>
+<div class="col col-md-2 subNavButton">Help and Support</div>
+<div class="col col-md-4 subNavButton"></div>
+</div>   */

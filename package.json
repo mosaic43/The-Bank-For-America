@@ -4,7 +4,8 @@
   "description": "This is the Phase 2 Project that focuses on the backend. For this project it will be a replica of a bank that focuses on the backend.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,21 @@
   "homepage": "https://github.com/mosaic43/The-Bank-For-America#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.3.3",
+    "css": "^2.2.4",
     "express": "^4.17.1",
+    "jquery": "^3.4.1",
     "knex": "^0.19.5",
     "mustache": "^3.1.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
     "pg": "^7.12.1",
-    "sqlite3": "^4.1.0"
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }
