@@ -15,7 +15,7 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: 'postgres://localHost:5432/the_bank_for_america',
     migrations: {
       directory: './knex/migrations'

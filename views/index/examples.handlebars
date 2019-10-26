@@ -1,0 +1,22 @@
+<div class="form-group col-md-4">
+      <label for="inputState">Transfer To:</label>
+      <select name="recipient" id="inputState" class="form-control">
+       {{!-- {{#select recipientList}}  --}}
+        <option value="lfuentes">lfuentes</option>
+        <option value="jsnow">jsnow</option>
+      {{!-- {{/select}} --}}
+      </select>
+    </div>
+
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+  <div class="input-group-append">
+    <span class="input-group-text">$</span>
+    <span class="input-group-text" value="{{amount}}">00</span>
+  </div>
+</div>
+<div>
+  {{amount}}
+
+</div>
+<button type="button" class="btn btn-primary">Transfer</button>

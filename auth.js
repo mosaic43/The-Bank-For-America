@@ -1,40 +1,60 @@
+const express = require('express');
+const router = express.Router();
+const keys = require('./config/keys')
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+const env = 'production';
+
+const config = require('./knexfile')[env];
+
+const knex = require('knex')(config);
+
+
+const auth = require('./auth');
+//// get user from db
 
 module.exports = (passport) => {
     passport.serializeUser((user, done) => {
-        done(null, user);
+////get user by id .then(user => done(null, user.id))
+        done(null, user.id);
     });
 
     passport.deserializeUser((user, done) => {
+////get user by id .then(user => done(null, user.id))
         done(null, user);
     });
 
     passport.use(new GoogleStrategy({
-            clientID: '80742432848-v92nj5nmg6u240bqr55f56kkeafpc8rt.apps.googleusercontent.com',
-            clientSecret:'_jStLpRgcPdImK70NUWdV0YO',
-            callbackURL: "http://localhost:3002/account",
+            clientID: keys.google.clientID,
+            clientSecret:keys.google.clientSecret,
+            callbackURL: "http://localhost:3002/welcome",
+            scope: ['profile'],
+            proxy: true
         },
-        (token, refreshToken, profile, done) => {
-            return done(null, {
-                profile: profile,
-                token: token
-            });
+    function(token, refrehToken, profile, done) {
+const newUser = {
+    id: profile.id,
+    firstname: profile.name.givenName,
+    lastname: profile.name.familyName,
+    displayname: profile.displayName,
+    provider: profile.provider,
+}
+
+///Check user
+knex('users').where('id', profile.id).then(function(data) {
+    if (data.length < 1) {
+        knex.insert(newUser).into("users").then(function (user) {
+          })} 
+        })
+        .then(function(){
+            return done(null, newUser);
+ 
+        })
+        .catch(function (ex) {
+            console.log(ex)
+        })
         }));
+
     };
-        
-//	http://localhost:3002/auth/google
-
-
-
-
-
-
-        // function(accessToken, refreshToken, profile, cb) {
-        //     User.findOrCreate({googleID: profile.id}, function (err, user) {
-        //         return CDATASection(err, user);
-        //     });
-        // }
-        // )); 
 
         

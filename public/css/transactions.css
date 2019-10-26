@@ -1,0 +1,53 @@
+
+.header {
+    font-weight:600;
+    font-size:15px;
+    color:darkred;
+}
+
+.toptransaction {
+    height: 10vh;
+    width: 100%;
+    background-color:#f1efea;
+    color: rgb(51, 49, 49);
+    padding: 1%;
+    margin-bottom: 2%;
+}
+.transactionForm {
+    height: 60vh;
+    width: 60%;
+    background-color: white;
+    color: rgb(51, 49, 49);
+    padding: 4%;
+    margin: 0%;
+}
+.newTransactionForm {
+    height: 10%;
+    width: 80%;
+    background-color: rgb(199, 212, 241);
+    color: rgb(51, 49, 49);
+    padding: 1%;
+    padding-bottom: 2%;
+    margin: 3%;
+}
+.quickHelp {
+    height: 30%;
+    width: 80%;
+    border: #cac7c0;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2%;
+    margin: 3%;
+
+}
+.footer{
+    height: 3vh;
+    width: 100%;
+    background-color: #f1efea;
+    color: rgb(51, 49, 49);
+    padding: 1%;
+    border-bottom: #cac7c0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 3%;
+}

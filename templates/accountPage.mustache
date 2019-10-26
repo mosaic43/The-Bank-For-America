@@ -24,7 +24,7 @@
 <div class="row">
 <div class="col col-md-8">
     <div class="bankMessage">Bank of America Preferred Client</div>
-    <span class="greeting"> Hello, Chantee </span>
+    <span class="greeting"> Hello,  {{{ test }}}</span>
     <div class="row headerSection">
         <div class="col col-md-12">
             <div class="titleAccounts"><img src="/img/logo.png" alt="logo" height="40" width="40s" styles="text-align:left; padding-right:5px;"> Personal Accounts</div>
@@ -37,7 +37,7 @@
         <div class="col col-md-6">
                 <div class="col col-md-12 accountName">Adv Plus Banking</div>
                 <br />
-                <div class="col col-md-12 quickView"> Quick View </div>
+                <div class="col col-md-12 quickView"></div>
                 </div>
             
         <div class="col col-md-6">
@@ -82,6 +82,25 @@
 </div>
 </body>
 </html>
+{{! <script>
+const fetch = require("node-fetch");
+var apiUrl = "http://localhost:3002/api/account"
+
+var userId = 201903;
+var userInfo = []
+function getUser(id) {
+  //fetch(apiUrl + '/userAccount/' + id)
+  fetch("http://localhost:3002/api/account/userAccount/201903")
+  .then(function(response) {
+    userInfo = response;
+    console.log(userInfo)
+  }).catch(err => {
+    console.error(err);
+  })
+
+}
+getUser(userId)
+</script> }}
 <style>
 .quickView {
     color: #524940;
