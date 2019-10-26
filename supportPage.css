@@ -1,0 +1,20 @@
+.header {
+    height: 10%;
+    width: 90%;
+    background-color: rgb(199, 212, 241);
+    color: rgb(51, 49, 49);
+    padding: 1%;
+    padding-bottom: 2%;
+    margin: 3%;
+    text-align: left;
+}
+.commonTopics {
+    height: 10%;
+    width: 90%;
+    background-color: white;
+    color: rgb(51, 49, 49);
+    padding: 0%;
+    padding-bottom: 2%;
+    margin: 3%;
+    text-align: left;
+}

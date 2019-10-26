@@ -1,0 +1,27 @@
+.footerBox {
+    background-color:rgb(220, 20, 49);
+color: white !important;
+width:100vw;
+height:16vh;
+padding: 0px;
+padding-top:20px;
+margin-bottom: 0px;
+position: absolute;
+}
+.footerTitle {
+    text-align: left !important;
+    padding-left:30px;
+}
+.footerLarge {
+    font-size:1.25rem;
+    font-weight: 600;
+}
+.footerRegular {
+    font-size:18px;
+}
+.footerSmall {
+    font-size:14px;
+}
+.rightFooter {
+    padding-top:30px;
+}

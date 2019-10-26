@@ -1,0 +1,37 @@
+
+  
+    {{!-- <div class="container"> --}}
+   
+        <div class="row mainHome">
+            <div class="col col-md-12 imageContainer">
+                <div class="col col-md-6">
+                            <div class="signInForm">
+                              <div class="secureSignIn">
+                                Secure Sign-In
+                              </div>
+                            <div>
+                          <form action="/login" method="post" style="padding-top:10%; padding-left:5%">
+                            <label for="username">Online ID</label>
+                            <br />
+                            <input type="text" id="username" name="username" placeholder="Your account..">
+                            <br />
+                            <label for="password">Passcode</label>
+                            <br />
+                            <input type="text" id="password" name="password" placeholder="Your passcode..">
+                            <div style="padding: 5%;">
+                            <input type="submit" value="Submit">
+                            </div>
+                          </form>
+                          </div>
+                          <div class="forgotPW">
+                            <btn><a href="/auth/google">Sign In with Google</a></btn>
+                              </div>
+                        </div>
+                </div>
+                <div class="col col-md-6 whiteText">
+                  Easily manage your bank accounts and finances online
+                </div>
+            </div>
+        </div>
+    {{!-- </div> --}}
+

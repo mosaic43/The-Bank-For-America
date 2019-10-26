@@ -1,23 +1,26 @@
 
 body {
     background-color: white;
-    margin: 0% !important;
-    padding: 0%;
-    width: 100%;
+}
+.setHeight {
+    height:75vh;
+}
+.whiteText {
+    color: white !important;
+}
+.left {
+    text-align: left !important;
+}
+.right {
+    text-align: right !important;
+}
+.center {
+    text-align: center !important;
 }
 .container {
     width: 100%;
     margin: 0% !important;
     padding: 0%;
-}
-.navHome {
-    margin: 0% !important;
-    padding: 0% !important;
-    align-content: flex-end;
-    height: 6vw;
-    width: 100vw;
-    color: rgb(35, 35, 61);
-    font-size: 30px;
 }
 .subNavHome {
     margin: 0%;
@@ -30,8 +33,7 @@ body {
     padding-left: 3.5%;
 }
 .imageContainer {
-    background-image: url(/img/homepic.jpg);
-    /* background-repeat: repeat; */
+    background-image: url(/public/img/loginpic.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
@@ -45,7 +47,6 @@ body {
 }
 .signInForm {
     margin: 5%;
-    /* padding: 5%; */
     background-color: white;
     height: 40vh;
     width: 20vw;
