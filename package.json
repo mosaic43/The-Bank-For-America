@@ -40,7 +40,7 @@
     "knex": "^0.19.5",
     "moment": "^2.24.0",
     "mustache": "^3.1.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "passport": "^0.4.0",
     "passport-github": "^1.1.0",
     "passport-google-oauth": "^2.0.0",
